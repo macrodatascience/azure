@@ -1,0 +1,20 @@
+{
+	"name": "RestService1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Coin API",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"My-CoinAPI-Key": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		}
+	}
+}
